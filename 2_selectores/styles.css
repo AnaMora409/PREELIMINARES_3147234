@@ -1,0 +1,79 @@
+/*selectores descendientes*/
+.mainTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#globalNav.mainTitle {
+    color: rgb(29, 108, 226);
+    font-size: 16px;
+}
+
+.contenedor .mainTitle{
+    color: blueviolet;
+}
+
+footer h2{
+    color: chartreuse;
+}
+
+/*selectores hijos*/
+footer > p{
+    background-color: pink;
+}
+/*cambiar el color del developer*/
+
+footer > p > span{
+    color: yellow;
+}
+
+/*selectores de hermandad*/
+
+/*hermanos subsiguientes*/
+footer p ~ h2{
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+/*hermanos adyacentes*/
+.developer{
+    font-family:Courier, monospace;
+    font-size: 20px;
+}
+
+.developer + p{
+    background-color: chocolate;
+}
+
+button{
+    color: blue;
+}
+
+/*selectores de atributos simple*/
+input[type]{
+    border-bottom:rgb(177, 8, 101) 2px dotted;
+    border-top: 4px solid green;
+}
+
+/*selector de atributo con valor*/
+/*un input que tenga el atrbuto type, cuyo type es password*/
+
+input[type="password"]{
+    border-left: rgb(104, 211, 83) 2px dashed ;
+    border-right:cornflowerblue 2px dashed ;
+}
+
+/*selector de atributo con valor al final*/
+
+/*enlaces con dominios .org*/
+a[href$=".org"]{
+    color: peru;
+}
+
+a[href=".Aprendices"]{
+    color: peru;
+}
+
+ a[href=".Instructores"]{
+    color: peru;
+}
